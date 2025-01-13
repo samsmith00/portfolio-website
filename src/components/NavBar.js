@@ -48,7 +48,7 @@ export const NavBar = () => {
                         </a>
                     </div>
                 </span>
-                <a href="Contact.js#connect">
+                <a href="#connect">
                     <button id="btn-connect"><span class="box">Let's Connect</span></button>
                 </a>
                 </Navbar.Collapse>
