@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 100" width="100%">
+  <path d="M -128 46 L -64 4 L 0 46 L 64 4 L 128 46 L 192 4 L 256 46 L 320 4 L 384 46 L 448 4 L 512 46 L 576 4 L 640 46 L 704 4 L 768 46 L 832 4 L 896 46 L 960 4 L 1024 46 L 1088 4 L 1152 46 L 1216 4 L 1280 46 L 1344 4 L 1408 46" 
+        fill="none" 
+        stroke="#59afff" 
+        stroke-width="8" 
+        transform="translate(0, 25)" 
+        style="stroke-dasharray: 5000; stroke-dashoffset: 5000; animation: draw 3s linear infinite;">
+  </path>
+</svg>
+
+<style>
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+</style>
