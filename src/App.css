@@ -90,9 +90,9 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 .container {
-  position: relative; /* Make sure the container is positioned relative */
+  position: relative; 
 }
-/* Wrapper for the zigzag */
+
 .zigzag-wrapper {
   position: absolute;
   width: 850px;
@@ -112,33 +112,29 @@ nav.navbar.scrolled {
     transform: translateX(-100%);
   }
   100% {
-    transform: translateX(-100%); /* Hold at this position */
+    transform: translateX(-100%); 
   }
 }
 
 .mask-rect {
-  animation: slideMask 8s linear infinite; /* Adjust cycle duration */
+  animation: slideMask 8s linear infinite; 
 }
 
-
-
-/* Updated nav-link styles with box-inspired design */
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 900; /* Make text bold like the box */
+  font-weight: 900; 
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 15px; /* Adjust padding for better spacing */
+  padding: 15px; 
   font-size: 18px;
   opacity: 0.75;
-  text-transform: uppercase; /* Similar to the box */
+  text-transform: uppercase; 
   position: relative;
-  display: inline-block; /* Ensure links behave like blocks */
-  overflow: hidden;
+  display: inline-block; 
   background: transparent;
   margin: 0 5px;
   text-align: center;
-  border: none; /* Remove red border */
-  transition: 0.5s linear; /* Smooth transitions */
+  border: none; 
+  transition: 0.5s linear; 
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:before {
@@ -190,7 +186,6 @@ nav.navbar .navbar-nav .nav-link.navbar-link.active {
   box-shadow: 0 5px 15px #02c8c8; 
 }
 
-
 #basic-navbar-nav {
   justify-content: space-between;
   margin-right: -130px;
@@ -210,7 +205,6 @@ span.navbar-text {
     align-items: center; 
 }
 
-
 #github-icon {
   width: 24px;
   height: 24px;
@@ -224,16 +218,16 @@ span.navbar-text {
 .social-icon a {
   --cyan: #02c8c8;
   font-size: 15px;
-  width: 3em; /* Adjust width for circle size */
-  height: 3em; /* Match width for a perfect circle */
-  padding: 0; /* Remove default padding */
+  width: 3em; 
+  height: 3em; 
+  padding: 0; 
   display: flex;
   justify-content: center;
-  align-items: center; /* Center text/icon */
+  align-items: center; 
   letter-spacing: 0.06em;
   position: relative;
   font-family: inherit;
-  border-radius: 50%; /* Makes the button circular */
+  border-radius: 50%; 
   overflow: hidden;
   transition: all 0.3s;
   line-height: 1.4em;
@@ -262,6 +256,7 @@ span.navbar-text {
 .social-icon a:hover:before {
   transform: translateX(15em);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
@@ -273,9 +268,11 @@ span.navbar-text {
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
 }
+
 .navbar-text button span {
   z-index: 1;
 }
+
 .navbar-text button::before {
   content: "";
   width: 0%;
@@ -287,20 +284,24 @@ span.navbar-text {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .navbar-text button:hover {
   color: #121212;
 }
+
 .navbar-text button:hover::before {
 	content: "";
 	width: 100%;
 	height: 100%;
 	position: absolute;
 }
+
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
     box-shadow: none;
 }
+
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
@@ -310,9 +311,11 @@ nav.navbar .navbar-toggler-icon {
   transition: all 300ms linear;
   top: -2px;
 }
+
 nav.navbar .navbar-toggler-icon:focus {
 	border-bottom: 2px solid #fff;
 }
+
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
@@ -325,19 +328,23 @@ nav.navbar .navbar-toggler-icon:before {
 	z-index: 2;
 	transition: all 300ms linear;
 }
+
 nav.navbar .navbar-toggler-icon:after {
 	top: 8px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
 	background-color: #fff;
 	height: 2px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
 	background-color: #fff;
 	height: 2px;
 }
+
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
@@ -445,7 +452,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: white;
   display: block; 
   line-height: 0;  
-  
 }
 
 .banner p {
@@ -650,82 +656,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: translateY(20px);
   }
 }
-
-/* .svg-icon path {
-  stroke: "#353E43";
-  stroke-width: 2;
-  fill: none;
-  stroke-dasharray: 0, 1000;
-  transition: stroke-dasharray 3s ease-in-out;
-} */
-
-
-/* 
-
-.svg-icon {
-  position: absolute;
-  opacity: 0;
-  animation: fadeInOut 12s infinite; 
-}
-
-
-@keyframes fadeInOut {
-  0% {
-    opacity: 0; 
-  }
-  10% {
-    opacity: 1; 
-  }
-  30% {
-    opacity: 1; 
-  }
-  80% {
-    opacity: 1; 
-  }
-  100% {
-    opacity: 0; 
-  }
-}
-
-@keyframes dash-expand {
-  0% {
-    stroke-dasharray: 0, 1000; 
-  }
-  100% {
-    stroke-dasharray: 1000, 0;
-  }
-}
-
-#wooster-svg path,
-#guitar-svg path,
-#exercise-svg path,
-#galaxy-svg path {
-  stroke: grey;
-  fill: none;
-  stroke-width: 2;
-  stroke-dasharray: 0, 1000; 
-  animation: dash-expand 3s ease-in-out forwards;
-}
-
-.svg-icon:nth-child(1) {
-  animation-delay: 0s; 
-}
-
-.svg-icon:nth-child(2) {
-  animation-delay: 6s; 
-}
-
-.svg-icon:nth-child(3) {
-  animation-delay: 12s; /
-}
-
-.svg-icon:nth-child(4) {
-  animation-delay: 18s;
-} */
-
-
-
-
 
 /************ Skills CSS ************/
 .skill {
@@ -979,9 +909,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact-bx {
   background-color: #151515;
   border-radius: 15px;
-  display: flex; /* Apply flexbox */
-  justify-content: space-between; /* Distributes the items evenly with space between them */
-  align-items: center; /* Aligns items vertically in the center */
+  display: flex; 
+  justify-content: space-between;  
+  align-items: center; 
   border-radius: 64px;
   text-align: center;
 }
@@ -1064,8 +994,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;  /* Vertically centers the content */
-  justify-content: center; /* Optionally centers the content horizontally */
+  align-items: center;  
+  justify-content: center; 
 }
 
 .footer .container {
