@@ -1,10 +1,6 @@
 import { useEffect, useState } from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import { gsap } from "gsap";
-import WoosterSVG from "./svgComponents/WoosterSVG";
-import GuitarSVG from "./svgComponents/GuitarSVG"
-import ExerciseSVG from "./svgComponents/ExerciseSVG";
-import GalaxySVG from "./svgComponents/GalaxySVG";
 import SplitTextJS from 'split-text-js';
 
 export const Banner = () => {
@@ -112,13 +108,6 @@ export const Banner = () => {
     };
   }, []);
   
-  
-  
-  
-  
-  
-
-  
     return (
         <section className="banner" id='home'>
             <Container id='body-container'>
@@ -165,49 +154,3 @@ export const Banner = () => {
     )
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-// const svgObserver = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         // Create a GSAP timeline for sequential animations
-//         const tl = gsap.timeline();
-
-//         svgs.forEach((svg, index) => {
-//           const delay = index * 6; // Stagger animations (e.g., 0s, 6s, 12s, etc.)
-
-//           // Sequential animation for each SVG
-//           tl.from(svg, {
-//             opacity: 0,
-//             duration: 1,
-//             delay: delay,
-//           })
-//             // .to(svg.querySelectorAll("path"), {
-//             //   opacity: 1,
-//             //   strokeDasharray: "1000, 0", // Trigger dash-expand animation
-//             //   duration: 3, // Dash-expand duration
-//             //   ease: "ease-in-out",
-//             // })
-//             .to(svg, {
-//               opacity: 0, // Fade out
-//               duration: 1, // Fade duration
-//             });
-//         });
-//       }
-//     });
-//   },
-//   {
-//     threshold: 0.5, // Start animation when 50% of the element is in view
-//   }
-// );

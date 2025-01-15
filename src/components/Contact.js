@@ -2,7 +2,6 @@ import React, { useRef, useState } from "react"
 import { Row, Col, Container } from "react-bootstrap";
 import emailjs from '@emailjs/browser';
 import { EmailSVG } from "./svgComponents/EmailSVG"
-import TrackVisibility from 'react-on-screen';
 
 export const Contact = () => {
     const formInitialDetails = {

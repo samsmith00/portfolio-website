@@ -2,9 +2,6 @@ import { Container, Row, Col, Tab } from 'react-bootstrap'
 import { ProjectCard } from './ProjectCards';  
 import { projectData } from "../constants/projectData"     
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import { Rocket } from 'react-bootstrap-icons';
-
 
 
 export const Projects = () => {
