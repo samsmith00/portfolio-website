@@ -49,64 +49,6 @@ export const Banner = () => {
       observerOne.disconnect();
     };
   }, []);
-
-  useEffect(() => {
-    const svgs = document.querySelectorAll(".svg-icon"); // Select all svg elements
-  
-    // Create an intersection observer
-    const svgObserver = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            // Create a timeline for each SVG to animate them sequentially
-            const tl = gsap.timeline({ repeat: -1, repeatDelay: 1});
-  
-            svgs.forEach((svg, index) => {
-  
-              // Animate each svg individually with stagger
-              tl.fromTo(svg, 
-                { opacity: 0 }, // Initial opacity for fade-in
-                {
-                  opacity: 1, 
-                  duration: 2, 
-                  delay: 3, // Delay to stagger
-                  onComplete: () => {
-                    // Add a scaling effect before the fade-out
-                    gsap.to(svg, {
-                      scale: 1.2, // Scale up to 120%
-                      duration: 1, // Duration of the scaling
-                      yoyo: true, // Enable yoyo effect (animation will reverse)
-                      repeat: 1, // Repeat the yoyo animation once
-                    });
-                    
-                    // Fade out after the scaling animation
-                    gsap.to(svg, {
-                      opacity: 0, 
-                      duration: 1 // Fade out after scaling
-                    });
-                  }
-                  
-                });
-              
-            });
-          }
-        });
-      },
-      {
-        threshold: 0.5, // Start animation when 50% of the element is in view
-      }
-    );
-  
-    // Observe each svg element
-    svgs.forEach((svg) => {
-      svgObserver.observe(svg);
-    });
-  
-    // Cleanup observer on component unmount
-    return () => {
-      svgObserver.disconnect();
-    };
-  }, []);
   
     return (
         <section className="banner" id='home'>
