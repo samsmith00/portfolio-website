@@ -4,6 +4,7 @@ import { gsap } from "gsap";
 import SplitTextJS from 'split-text-js';
 
 export const Banner = () => {
+  const [scrolled, setScrolled] = useState(false)
   useEffect(() => {
     const titles = document.querySelectorAll(".title"); // Select all spans with class "title"
     
@@ -49,6 +50,19 @@ export const Banner = () => {
       observerOne.disconnect();
     };
   }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 60) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+    })
   
     return (
         <section className="banner" id='home'>
@@ -82,7 +96,7 @@ export const Banner = () => {
                         </p>
                     </Col>
                     <Col xs={12} md={6} xl={5} style={{marginTop: 400, paddingLeft: 200 }}>
-                      <div class="container_mouse">
+                      <div class={scrolled ? "mouse-scroll-hidden" : "container_mouse"}>
                           <span class="mouse-btn">
                               <span class="mouse-scroll"></span>
                           </span>

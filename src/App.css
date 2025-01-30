@@ -645,6 +645,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   animation: scrolling13 1s linear infinite;
 }
 
+.mouse-scroll-hidden {
+  animation: fadeOut 450ms;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
 @keyframes scrolling13 {
   0% {
     opacity: 0;
