@@ -53,7 +53,7 @@ export const Banner = () => {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 60) {
+      if (window.scrollY > 50) {
         setScrolled(true);
       } else {
         setScrolled(false);
