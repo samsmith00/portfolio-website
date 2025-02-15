@@ -121,70 +121,70 @@ nav.navbar.scrolled {
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
-  font-weight: 900; 
+  font-weight: 900;
   color: #fff !important;
   letter-spacing: 0.8px;
-  padding: 15px; 
+  padding: 15px;
   font-size: 18px;
   opacity: 0.75;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   position: relative;
-  display: inline-block; 
-  background: transparent;
+  display: inline-block;
   margin: 0 5px;
   text-align: center;
-  border: none; 
-  transition: 0.5s linear; 
+  background: transparent;
+  border: none;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link:before,
+nav.navbar .navbar-nav .nav-link.navbar-link:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 4px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out, height 0.3s linear 0.3s;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:before {
-  position: absolute;
-  content: '';
   left: 0;
   bottom: 0;
-  height: 4px;
-  width: 100%;
   border-bottom: 4px solid transparent;
   border-left: 4px solid transparent;
-  box-sizing: border-box;
   transform: translateX(100%);
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:after {
-  position: absolute;
-  content: '';
   top: 0;
   left: 0;
-  width: 100%;
-  height: 4px;
   border-top: 4px solid transparent;
   border-right: 4px solid transparent;
-  box-sizing: border-box;
   transform: translateX(-100%);
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover {
-  box-shadow: 0 5px 15px #02c8c8;
+  box-shadow: 0 5px 15px rgba(2, 200, 200, 0.5);
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover:before {
   border-color: #02c8c8;
   height: 100%;
   transform: translateX(0);
-  transition: .3s transform linear, .3s height linear .3s;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link:hover:after {
   border-color: #02c8c8;
   height: 100%;
   transform: translateX(0);
-  transition: .3s transform linear, .3s height linear .5s;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link.active {
   opacity: 1;
-  box-shadow: 0 5px 15px #02c8c8; 
+  box-shadow: 0 5px 15px #02c8c8;
 }
+
 
 #basic-navbar-nav {
   justify-content: space-between;
