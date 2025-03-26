@@ -1,0 +1,61 @@
+{
+  "homepage": "https://samsmith00.github.io/portfolio-website",
+  "name": "portfolio-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@tsparticles/engine": "^3.7.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.7.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "cra-template": "1.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "gsap": "^3.12.5",
+    "nodemailer": "^6.9.16",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.7",
+    "react-bootstrap-icons": "^1.11.5",
+    "react-dom": "^18.3.1",
+    "react-multi-carousel": "^2.8.5",
+    "react-on-screen": "^2.1.1",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "^5.0.1",
+    "split-text-js": "^1.0.3",
+    "tsparticles": "^3.7.1",
+    "tsparticles-plugin-polygon-mask": "^2.12.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "web-vitals": "^4.2.4"
+  }
+}
