@@ -73,9 +73,9 @@ export const Banner = () => {
                         <h1>{`Hi I'm Sam `}<br/></h1>
                         <div className="txt-animation-container">
                                 <div className="txt-animation-wrapper">
-                                    <span className="title">Mathematical Modeler</span>
-                                    <span className="title">Dynamic Programmer</span>
-                                    <span className="title">Analytical Innovator</span>
+                                    <span className="title">Relentless</span>
+                                    <span className="title">Detail-Oriented</span>
+                                    <span className="title">Inquisitive </span>
                                 </div>
                             </div>
                         <p> 
