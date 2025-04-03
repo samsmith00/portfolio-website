@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-website/static/css/main.9204107b.css",
-    "main.js": "/portfolio-website/static/js/main.7f276978.js",
+    "main.js": "/portfolio-website/static/js/main.5b9011c6.js",
     "static/js/488.f1ad4097.chunk.js": "/portfolio-website/static/js/488.f1ad4097.chunk.js",
     "static/media/eBay-img.png": "/portfolio-website/static/media/eBay-img.22e17b7212acd56b4cf2.png",
     "static/media/asteroids_alien.png": "/portfolio-website/static/media/asteroids_alien.73e4ae38182f428b9971.png",
@@ -25,11 +25,11 @@
     "static/media/CSS.svg": "/portfolio-website/static/media/CSS.2d2d0379bf81abfd5ead2e86164d0683.svg",
     "static/media/HTML.svg": "/portfolio-website/static/media/HTML.e39b7634aa26e0526115cec015653ff5.svg",
     "main.9204107b.css.map": "/portfolio-website/static/css/main.9204107b.css.map",
-    "main.7f276978.js.map": "/portfolio-website/static/js/main.7f276978.js.map",
+    "main.5b9011c6.js.map": "/portfolio-website/static/js/main.5b9011c6.js.map",
     "488.f1ad4097.chunk.js.map": "/portfolio-website/static/js/488.f1ad4097.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9204107b.css",
-    "static/js/main.7f276978.js"
+    "static/js/main.5b9011c6.js"
   ]
 }
